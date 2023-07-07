@@ -1,2 +1,5 @@
 # umap-hdbscan
-Automatic MRD detection for AML patients with UMAP and HDBSCAN.
+Automatic MRD detection in pediatric AML patients with UMAP and HDBSCAN.
+
+
+
