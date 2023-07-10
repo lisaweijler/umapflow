@@ -1,4 +1,4 @@
-# umap-hdbscan
+# UmapFlow
 Automatic MRD detection in pediatric AML patients with UMAP and HDBSCAN. 
 
 Official implementation of our work: *"UMAP based anomaly detection for minimal residual disease quantification within acute myeloid leukemia"*
