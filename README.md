@@ -18,7 +18,7 @@ $ python setup.py install
 
 ### Config file 
 
-A template for the config file is given by  ``config/example-experiment.json``; it specifies where to load the data from as well as the hyperparameters used for UMAP and HDBSCAN. The *data_loader* config specifies path to *.txt files, which hold the paths to raw flow cytometry files. Those file are preloaded and saved using pickle into a directory specified in "fast_preload_dir". If the fast preload directories already exist, the preloaded files are used directly. 
+A template for the config file is given by  ``config/example-experiment.json``. It specifies where to load the data from, as well as the hyperparameters used for UMAP and HDBSCAN. The *data_loader* config stores the path to a folder containing *.txt files. In those *.txt files the paths to raw flow cytometry files are stored (e.g. see "data/example_experiment/train.txt or test.txt). Those files are preloaded and saved using pickle into a directory specified in "fast_preload_dir" (e.g. data/example_experiment/data_temp). If the fast preload directories already exist, the preloaded files are used directly. 
 
 Here a few preloaded example files are given to test the repository. To load raw flowcytometry file we recommend using the package ``flowme``. 
 
