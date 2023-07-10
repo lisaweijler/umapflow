@@ -30,7 +30,7 @@
             "markers": ["FSC-A", "SSC-A", "CD38", "CD99", "CD371", "CD34", "CD117", "CD33", "CD123", "CD45RA", "HLA-DR", "CD45"],
             "cut-off": false,
             "sequence_length": 200000,
-            "shuffle": true,
+            "shuffle": false,
             "multi_class_gates": ["adenominator", "bermude", "monocytes", "granulocytes", "proery", "promy",  "cd34total", "cd34normal","blastother","blast34"]
             }
         },
