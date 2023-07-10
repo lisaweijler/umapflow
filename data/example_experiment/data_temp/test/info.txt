@@ -1,0 +1,11 @@
+FSC-A,SSC-A,CD38,CD99,CD371,CD34,CD117,CD33,CD123,CD45RA,HLA-DR,CD45
+adenominator: 1
+bermude: 2
+monocytes: 3
+granulocytes: 4
+proery: 5
+promy: 6
+cd34total: 7
+cd34normal: 8
+blastother: 9
+blast34: 10

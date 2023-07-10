@@ -1,0 +1,50 @@
+{
+    "name": "example_experiment",
+    "panel": "CFU",
+    "overwrite": false,
+    "min_mrd": 0.0,
+    "arch": {
+        "type": "UMAPHDBSCANControlModel",
+        "args": { 
+            "umap_args": {
+                "semi_supervised": false, 
+                "n_components": 3, 
+                "n_neighbors": 15,
+                "min_dist": 0.0,
+                "metric": "euclidean",
+                "opt_mix_ratio": 1.0
+            },
+        
+            "hdbscan_args": {
+                "min_cluster_size": 50
+            }
+        }
+    },
+    
+    "data_loader": {
+        "type": "FlowData",
+        "args": {
+            "data_dir": "data/example_experiment",
+            "fast_preload_dir": "data/example_experiment/data_temp",
+            "fast_preload": true,
+            "markers": ["FSC-A", "SSC-A", "CD38", "CD99", "CD371", "CD34", "CD117", "CD33", "CD123", "CD45RA", "HLA-DR", "CD45"],
+            "cut-off": false,
+            "sequence_length": 200000,
+            "shuffle": true,
+            "multi_class_gates": ["adenominator", "bermude", "monocytes", "granulocytes", "proery", "promy",  "cd34total", "cd34normal","blastother","blast34"]
+            }
+        },
+
+    "metrics": ["tp", "tn", "fp", "fn", "precision", "recall", "f1_score", "mrd_gt", "mrd_pred"],
+
+    "trainer": {
+        "save_dir": "output/",
+        "control_multiplier": 0.8,
+        "transform_multiplier": 1.0,
+        "include_adenominator": true,
+        "bermude_path": "",
+        "cd34total_path":""
+    
+    }
+
+}

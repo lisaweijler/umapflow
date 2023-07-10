@@ -1,0 +1,6 @@
+data/raw/control/Vie033 KM CFU.analysis
+data/raw/control/Vie064 Con3 CFU.analysis
+data/raw/control/Vie086 d25 CFU.analysis
+data/raw/control/Vie092 Ind1 CFU.analysis
+data/raw/control/Vie110 Marma CFU.analysis
+data/raw/control/Vie086 con1 CFU.analysis
